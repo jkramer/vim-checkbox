@@ -20,7 +20,7 @@ Just copy the script into your plugin folder, e.g. `~/.vim/plugin/`.
 Usage
 -----
 
-Typ `<leader>tt` to toggle the (first) checkbox on the current line. A checkbox
+Type `<leader>tt` to toggle the (first) checkbox on the current line. A checkbox
 is either `[ ]` (unchecked) or `[x]` (checked). For example,
 
     * [ ] Do some work.
