@@ -30,6 +30,6 @@ endf
 
 command! ToggleCB call checkbox#ToggleCB()
 
-map <silent> <leader>tt :ToggleCB<cr>
+nmap <silent> <leader>tt :ToggleCB<cr>
 
 let g:loaded_checkbox = 1
