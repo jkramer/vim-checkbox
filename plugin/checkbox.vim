@@ -14,21 +14,21 @@
 " ****************************************************************************
 
 if exists('g:loaded_checkbox')
-	" finish
+    " finish
 endif
 
 fu! checkbox#ToggleCB()
-	let line = getline('.')
+    let line = getline('.')
 
-	if(match(line, "\\[ \\]") != -1)
-		let line = substitute(line, "\\[ \\]", "[x]", "")
-	elseif(match(line, "\\[x\\]") != -1)
-		let line = substitute(line, "\\[x\\]", "[ ]", "")
+    if(match(line, "\\[ \\]") != -1)
+        let line = substitute(line, "\\[ \\]", "[x]", "")
+    elseif(match(line, "\\[x\\]") != -1)
+        let line = substitute(line, "\\[x\\]", "[ ]", "")
     else
         let line = substitute(line, "$", " [ ]", "")
-	endif
+    endif
 
-	call setline('.', line)
+    call setline('.', line)
 endf
 
 command! ToggleCB call checkbox#ToggleCB()

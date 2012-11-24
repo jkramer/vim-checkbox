@@ -22,7 +22,7 @@ will be added at the end of the line. For example,
 
 becomes
 
-	* [x] Do some work.
+    * [x] Do some work.
 
 and vice versa.
 
