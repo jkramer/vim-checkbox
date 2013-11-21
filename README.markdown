@@ -30,3 +30,6 @@ becomes
 	* [x] Do some work.
 
 and vice versa.
+
+If there is nothing to toggle a checkbox is added to the beginning of
+the current line.
