@@ -21,12 +21,16 @@ Usage
 -----
 
 Type `<leader>tt` to toggle the (first) checkbox on the current line. A checkbox
-is either `[ ]` (unchecked) or `[x]` (checked). For example,
+is either `[ ]` (unchecked), `[-]` (indeterminate), or `[x]` (checked). For example,
 
     * [ ] Do some work.
 
 becomes
 
-	* [x] Do some work.
+     * [-] Do some work.
+     
+which then becomes
+
+     * [x] Do some work.
 
 and vice versa.

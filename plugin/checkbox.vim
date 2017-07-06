@@ -20,7 +20,9 @@ fu! checkbox#ToggleCB()
 	let line = getline('.')
 
 	if(match(line, "\\[ \\]") != -1)
-		let line = substitute(line, "\\[ \\]", "[x]", "")
+		let line = substitute(line, "\\[ \\]", "[-]", "")
+	elseif(match(line, "\\[-\\]") != -1)
+		let line = substitute(line, "\\[-\\]", "[x]", "")
 	elseif(match(line, "\\[x\\]") != -1)
 		let line = substitute(line, "\\[x\\]", "[ ]", "")
 	endif
