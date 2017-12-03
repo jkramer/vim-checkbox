@@ -1,6 +1,6 @@
 " ****************************************************************************
 " File:             checkbox.vim
-" Author:           Jonas Kramer, Patrick Messina
+" Author:           Jonas Kramer
 " Version:          0.2
 " Last Modified:    2017-12-03
 " Copyright:        Copyright (C) 2010 by Jonas Kramer. Published under the
