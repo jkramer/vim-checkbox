@@ -45,3 +45,19 @@ useful for adding a space behind or in front of the checkbox:
 
 Inserting a checkbox can be disabled by setting `g:insert_checkbox` to an
 empty string (`''`).
+
+Mapping
+-------
+
+By default a global mapping is `<leader>tt` used.  This can cause problems if
+you already use that mapping and this plugin is lazy-loaded.
+In this case you can to suppress this mapping by setting:
+
+    let g:checkbox_suppress_mapping = 1
+
+And the map the command however you want.  For example, a buffer local mapping
+for Markdown files only by adding the following to `.vim/ftplugin/markdown.vim:`
+
+```vim
+map <buffer><silent><leader>tt :call checkbox#ToggleCB()<cr>
+```

@@ -82,6 +82,8 @@ endf
 
 command! ToggleCB call checkbox#ToggleCB()
 
-map <silent> <leader>tt :call checkbox#ToggleCB()<cr>
+if !exists('g:checkbox_suppress_mapping') || g:checkbox_suppress_mapping != 1
+    map <silent> <leader>tt :call checkbox#ToggleCB()<cr>
+endif
 
 let g:loaded_checkbox = 1
