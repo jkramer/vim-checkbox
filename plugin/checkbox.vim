@@ -32,6 +32,11 @@
 "
 " Inserting a checkbox can be disabled by setting g:insert_checkbox to an
 " empty string ('').
+"
+" The default keymap can be customized by setting the following:
+"
+"     let g:checkbox_create_maps = 0
+"     map <silent> <your_key_map_here> :call checkbox#ToggleCB()<CR>
 " ****************************************************************************
 
 if exists('g:loaded_checkbox')
@@ -82,6 +87,9 @@ endf
 
 command! ToggleCB call checkbox#ToggleCB()
 
-map <silent> <leader>tt :call checkbox#ToggleCB()<cr>
+" Create keymaps only if configured to do so (defaults to 'yes')
+if get(g:, 'checkbox_create_maps', 1)
+  map <silent> <leader>tt :call checkbox#ToggleCB()<cr>
+endif
 
 let g:loaded_checkbox = 1

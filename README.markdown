@@ -45,3 +45,8 @@ useful for adding a space behind or in front of the checkbox:
 
 Inserting a checkbox can be disabled by setting `g:insert_checkbox` to an
 empty string (`''`).
+
+The default keymap can be customized by setting the following:
+
+    let g:checkbox_create_maps = 0
+    map <silent> <your_key_map_here> :call checkbox#ToggleCB()<CR>
