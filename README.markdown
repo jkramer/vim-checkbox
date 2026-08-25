@@ -1,5 +1,11 @@
 
 
+# Repository moved!
+
+**Any future development will happen
+[here](https://codeberg.org/jkramer/vim-checkbox) on Codeberg.**
+
+
 Vim Checkbox
 ============
 
